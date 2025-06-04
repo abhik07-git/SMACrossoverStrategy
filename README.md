@@ -1,10 +1,10 @@
 # Moving Average Crossover Strategy
 
-This project simulates a basic trading strategy using simple moving averages and real stock market data. It was built in Python using `yfinance`, `pandas`, and `matplotlib`, and generates buy/sell signals based on the crossover between short-term and long-term SMAs.
+This project simulates a basic trading strategy using simple moving averages and real stock market data. It was built in Python using `yfinance`, `pandas`, `matplotlib`, and `datetime`. The program creates buy/sell signals based on the crossover between short-term and long-term SMAs.
 
 # Why I Built This
 
-As someone planning to study finance and interested in data science, I wanted to explore how technical indicators could be applied using Python. I completed this before starting at UMD to strengthen my skills in working with real data and to understand the fundamentals of building and testing trading logic. This also aligns with my broader interest in data-driven finance and quantitative research.
+As someone planning to study finance and interested in data science, I wanted to explore how technical indicators could be applied using Python. I completed this before starting at UMD to strengthen my skills in working with real data and to understand the fundamentals of building and testing trading logic. This also aligns with my broader interest in data-driven finance research.
 
 # What It Does
 
@@ -40,4 +40,7 @@ The final output is a chart that shows the stock price, both moving averages, an
 2. Install dependencies using:
 
 ```bash
-pip install yfinance pandas matplotlib
+import yfinance as yf
+import pandas as pd
+import matplotlib.pyplot as plt
+from datetime import datetime, timedelta
